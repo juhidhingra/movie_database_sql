@@ -11,6 +11,7 @@ FROM
 WHERE
     rating.rev_stars IS NULL;
     
+    
 # 2. Write a query in SQL to list the first and last names of all the actors  who were cast in the movie 'Annie Hall', and the roles they played in that production.
 
 SELECT 
@@ -23,6 +24,7 @@ FROM
     movie ON movie_cast.mov_id = movie.mov_id
 WHERE
     movie.mov_title = 'Annie Hall';
+    
     
 # 3. Write a query in SQL to find the name of movie and director (first and last names) who directed a movie that casted a role for 'Eyes Wide Shut'.
 
@@ -174,6 +176,7 @@ WHERE
             MIN(movie.mov_time)
         FROM
             movie);
+            
             
 # 12. Write a query in SQL to find all the years which produced a movie that received a rating of 3 or 4, and sort the result in increasing order
 
@@ -439,3 +442,5 @@ FROM
     rating
 WHERE
     act_gender = 'F';
+    
+    
